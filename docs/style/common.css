@@ -1,0 +1,4 @@
+.current-difficulty:after{
+    display:inline-box;
+    content:"(" attr(data-current) ")";
+}
