@@ -4,6 +4,7 @@
   <title></title>
   <meta charset="UTF-8">
   <script src="https://code.jquery.com/jquery-3.5.0.slim.min.js"></script>
+  <script type="text/javascript" src="js/tom-storage.js" defer></script>
   <script type="text/javascript" src="js/settei.js" defer></script>
   <style type="text/css">
   .b {
@@ -16,7 +17,12 @@ color:aqua;
 
 .difficulty:hover{
   text-decoration: underline;
-}
+  }
+
+  .current-difficulty:after{
+  display:inline-box;
+  content:"(" attr(data-current) ")";
+  }
 
 body {
  background-color: teal;
@@ -28,7 +34,7 @@ body {
 <a href="index.html">戻る</a>
 </center>
 
- <h1 class="b"> 難易度</h1>
+ <h1 class="b current-difficulty"> 難易度</h1>
 
 <h1 class="c difficulty"> easy  </h1>
 

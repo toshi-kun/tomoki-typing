@@ -4,6 +4,9 @@
   <title></title>
   <meta charset="UTF-8">
   <script src="https://code.jquery.com/jquery-3.5.0.slim.min.js"></script>
+  <script type="text/javascript" src="js/tom-storage.js" defer></script>
+  <script type="text/javascript" src="js/settei.js" defer></script>
+
   <script>
     $(function(){ console.log("Content Loaded.");});
   </script>
@@ -25,11 +28,17 @@
     font-size: 30pt;
     color: gray;
   }
- 
+
+  a:hover,
   .x:hover {
 color: white; 
 /*   background-color: blue; */
 }
+
+    .current-difficulty:after{
+  display:inline-box;
+  content:"(" attr(data-current) ")";
+  }
 
   
   </style>
@@ -45,7 +54,7 @@ color: white;
 <h2>どっちが良いかな？</h2>
   	
   	<h2 class="x"><a href="settei.html">設定</a></h2>
-  	<h2 class="x"><a href="start.html">始める</a></h2>
+  	<h2 class="x"><a href="start.html" class="current-difficulty">始める</a></h2>
 </center>
   
 </body>
